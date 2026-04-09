@@ -1,2 +1,26 @@
-# CSI142-Tuckshop-Project
-DOMAIN: Business and informal trade(Tuckshop inventory and sales summary).CONCEPT NOTE : A Java console app for Botswana tuckshops to track inventory (e.g., magwinya, airtime) and sales. It uses inheritance for different product types and encapsulation for stock control. The system provides a text-based menu to record transactions and view revenue reports.
+Tuckshop Inventory System
+
+Concept Note: This project is a Java console-based application designed to help a tuckshop owner manage inventory and track sales.
+
+The system allows users to:
+- Add products (food and drinks)
+- View available items
+- Record purchases
+- Generate a sales summary
+
+---
+ Features
+- Add products  
+- View products  
+- Buy products  
+- View sales summary  
+
+---
+
+ Group Members
+- Jordan Thabang Palalani (202503402)  
+- Joel Nyoni (202500020)  
+- Amon Mwanza (202504082)  
+- Tumelo Toteng (202404885)  
+- Laura Lekgaba (202502777)
+  
