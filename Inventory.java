@@ -2,6 +2,7 @@ package service;
 
 import model.Product;
 import model.Sale;
+import model.Displayable;
 import java.util.ArrayList;
 
 public class Inventory {
@@ -18,12 +19,17 @@ public class Inventory {
             return;
         }
 
-        for (Product p : products) {
-            System.out.println(p.getName() + " | Price: " + p.getPrice() + " | Qty: " + p.getQuantity());
+        for (Displayable p : products) { 
+            p.display();
         }
     }
 
     public void buyProduct(String name, int quantity, Sales sales) {
+        if (quantity <= 0) {
+            System.out.println("Invalid quantity.");
+            return;
+        }
+
         for (Product p : products) {
             if (p.getName().equalsIgnoreCase(name)) {
 
