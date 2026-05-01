@@ -1,6 +1,7 @@
 package service;
 
 import model.Sale;
+import model.Displayable;
 import java.util.ArrayList;
 
 public class Sales {
@@ -16,10 +17,8 @@ public class Sales {
             return;
         }
 
-        for (Sale s : salesList) {
-            System.out.println(s.getProductName() +
-                    " x" + s.getQuantity() +
-                    " = " + s.getTotalPrice());
+        for (Displayable s : salesList) { 
+            s.display();
         }
     }
 }
