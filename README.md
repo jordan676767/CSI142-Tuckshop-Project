@@ -1,26 +1,53 @@
-Tuckshop Inventory System
+ Tuckshop Inventory System (CSI142 Mini Project)
 
-Concept Note: This project is a Java console-based application designed to help a tuckshop owner manage inventory and track sales.
+ Project Overview
+This is a Java console-based tuckshop management system developed for the CSI142 Object-Oriented Programming mini project.  
 
-The system allows users to:
-- Add products (food and drinks)
-- View available items
-- Record purchases
-- Generate a sales summary
+The system allows users to manage products, record sales, and view inventory and sales reports through a simple menu-driven interface.
+
+The project demonstrates key OOP principles such as:
+- Encapsulation
+- Inheritance
+- Abstraction
+- Polymorphism
+- Composition
+- Use of Collections (ArrayList)
 
 ---
+
  Features
-- Add products  
-- View products  
-- Buy products  
-- View sales summary  
+
+The system provides the following functionality:
+
+1. Add new products to inventory  
+2. View all available products  
+3. Buy products (reduces stock and records sales)  
+4. View all sales records  
+5. Continuous menu system until exit  
+6. Input validation and error handling  
+
+---
+ Object-Oriented Design
+
+Key Classes:
+- `Product` → Represents items in the tuckshop
+- `Sale` → Represents a completed transaction
+- `Item` → Superclass for shared product properties
+- `Inventory` → Handles product management and purchasing
+- `Sales` → Stores and displays sales records
+- `Menu` → Displays system menu
+- `Main` → Runs the application
+
+ OOP Concepts Used:
+- **Inheritance** → `Product extends Item`
+- **Abstraction** → `Displayable` interface
+- **Polymorphism** → Objects handled through "Displayable`
+- **Encapsulation** → Private fields with getters/setters
+- **Composition** → Inventory contains Products, Sales contains Sale records
 
 ---
 
- Group Members
-- Jordan Thabang Palalani (202503402)  
-- Joel Nyoni (202500020)  
-- Amon Mwanza (202504082)  
-- Tumelo Toteng (202404885)  
-- Laura Lekgaba (202502777)
-  
+ How to Compile and Run
+
+javac app/*.java model/*.java service/*.java
+java app.Main
